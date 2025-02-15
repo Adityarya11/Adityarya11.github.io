@@ -1,81 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Arya - Portfolio</title>
-  <link rel="stylesheet" href="style.css"> </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aditya Arya | Portfolio</title>
+    <link rel="stylesheet" href="Css/newcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="Assets/favicon/apple-touch-icon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+</head>
+
 <body>
-  <header>
-    <h1>Aditya Arya</h1>
-    <p class="subtitle">Computer Science Engineer | Mentor | Game Developer</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#other-activities">Other Activities</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a highly motivated and results-oriented Computer Science Engineering student at Rajiv Gandhi Institute of Petroleum Technology (RGIPT) with a strong academic background (CPI: 8.81*) and a passion for game development, mentorship, and critical thinking.</p>
-      <p>I enjoy applying my technical skills and knowledge to create engaging game experiences. My experience as a teaching assistant and mentor has fostered my ability to effectively guide and support others in their academic pursuits.</p>
-      <p>*CPI (Cumulative Performance Index) is a measure of academic performance in India.</p>
-    </section>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Aditya Arya</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact-Me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme uil-sun" id="theme-button"></i>
 
-    <section id="education">
-      <h2>Education</h2>
-      <h3>Rajiv Gandhi Institute of Petroleum Technology (RGIPT), Jais, UP</h3>
-      <p><strong>B.Tech. in Computer Science and Engineering (Aug 2023 – Jun 2027)</strong></p>
-      <p>Relevant Coursework: Data Structures and Algorithms, Web Development, Scripting</p>
-      <h3>D.A.V. Kapil Dev Public School, Kadru, Ranchi, India</h3>
-      <ul>
-        <li>Intermediate (Class 12): 92.8%</li>
-        <li>Matriculate (Class 10): 96.4%</li>
-      </ul>
-      <p>JEE MAINS – Qualified and ranked 55614 among 1.1 million candidates</p>
-      <p>JEE ADVANCED – Qualified and ranked among the top 2% of the total applicants</p>
-    </section>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <h3>RGIPT, Mentor - Gyanarpan (January 2024 – Present)</h3>
-      <p>I guide students of Class 11-12th in preparing for competitive exams like JEE Mains, CUET, NDA, and Boards.</p>
-      <h3>Shiva’s Institute and Coaching, Mentor (2020–2022)</h3>
-      <p>Mentored students from primary classes to Class 9, fostering their academic growth and personal development.</p>
-    </section>
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__img">
+                        <img src="Assets/Images/ME.jpg" alt="Aditya Arya's profile picture">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Aditya Arya</h1>
+                        <h3 class="home__subtitle">Aspiring CSE Student</h3>
+                        <p class="home__description" id="typing-effect">
+                            Passionate about AI, ML, Web Development, and Cyber Security. I love building innovative
+                            projects that solve real-world problems. Coding for a Change: Debugging the Future.
+                        </p>
+                        <div class="home__social">
+                            <a href="https://github.com/Adityarya11" class="home__social-icon" target="_blank"
+                                aria-label="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aditya-arya-714403281/" class="home__social-icon"
+                                target="_blank" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:arya050411@gmail.com" class="home__social-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <h3>Programming Languages</h3>
-      <ul>
-        <li>C++</li>
-        <li>C#</li>
-      </ul>
-      <h3>Areas of Interest</h3>
-      <ul>
-        <li>Game Development</li>
-        <li>Mentorship</li>
-        <li>Critical Thinking</li>
-      </ul>
-      <h3>Tools & Technologies</h3>
-      <p>List your game development tools and technologies here (e.g., Unity, Unreal Engine, etc.).</p>
-    </section>
+                    </div>
+                    <div class="home__data">
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Showcase your projects here in a similar format as Aryaman Raj's resume. Include project titles, descriptions, and technology stacks used.</p>
-    </section>
 
-    <section id="achievements">
-      <h2>Achievements</h2>
-      <ul>
-        
+
+                        <a href="#contact" class="button button--flex">
+                            Contact me<i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Add the Web Technologies section -->
+        <section class="web-tech section" id="web-tech">
+            <h2 class="section__title">Introduction to Web Technologies</h2>
+            <span class="section__subtitle">The Building Blocks of the Web</span>
+            <div class="web-tech__container container">
+                <p class="web-tech__description">
+                    Web technologies are the tools and languages used to create and interact with websites. They include
+                    HTML for structure, CSS for styling, and JavaScript for interactivity. Together, these technologies
+                    enable developers to build dynamic, responsive, and user-friendly web applications.
+                </p>
+                <ul class="web-tech__list">
+                    <li><strong>HTML</strong>: The backbone of any website, used to structure content.</li>
+                    <li><strong>CSS</strong>: Used to style and layout web pages, making them visually appealing.</li>
+                    <li><strong>JavaScript</strong>: Adds interactivity and dynamic behavior to websites.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">Who I am</span>
+            <div class="container about__container">
+                <div class="about__img">
+                    <img src="Assets/Images/ME2.jpg" alt="Aditya Arya's portrait">
+                </div>
+                <div class="about__content">
+                    <p class="about__description">
+                        Computer Science undergraduate at Rajiv Gandhi Institute of Petroleum Technology with a strong
+                        academic record (8.65 CPI) and a passion for AI/ML and software development. Skilled in Python,
+                        various web frameworks, and machine learning technologies with hands-on experience building
+                        complex systems including LLM-powered applications and predictive models. Ranked in the top 2%
+                        of JEE Advanced 2023, demonstrating strong analytical abilities. Active in technical
+                        communities, volunteering, and leadership roles in campus events while continuously expanding
+                        skills through self-directed learning and project work in game development, cybersecurity, and
+                        cross-platform technologies.
+                    </p>
+
+                    <a href="Assets/MyCV.pdf" class="button" download>
+                        Download Resume <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="education section" id="education">
+            <h2 class="section__title">Education</h2>
+
+            <div class="container">
+                <div class="education__content">
+
+
+                    <!--==================== Qualifications ==================-->
+                    <section class="qualification section" id="qualification">
+
+                        <div class="timeline"> <!-- Timeline Item 1: Matriculation -->
+                            <div class="timeline-item">
+                                <div class="timeline-icon"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-degree">Matriculation</h3>
+                                    <p class="timeline-institution">D.A.V. Kapildev Public School, Ranchi</p> <span
+                                        class="timeline-year"> <i class="uil uil-calendar-alt"></i> 2021 </span> <button
+                                        class="button button--flex button--small timeline-more services__button"> View
+                                        More <i class="uil uil-arrow-right button__icon"></i> </button>
+                                    <div class="services__modal">
+                                        <div class="services__modal-content">
+                                            <h4 class="services__modal-title">Class 10th Summary:</h4> <i
+                                                class="uil uil-times services__modal-close"></i>
+                                            <ul class="services__modal-services grid">
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Subjects studied: Science, Maths, English, Social Studies, Hindi,
+                                                        Computer Applications.</p>
+                                                </li>
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Scored 96.4%</p>
+                                                </li>
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Ranked Top 15 students in the batch.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Timeline Item 2: Intermediate -->
+                            <div class="timeline-item">
+                                <div class="timeline-icon"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-degree">Intermediate</h3>
+                                    <p class="timeline-institution">D.A.V. Kapildev Public School, Ranchi</p> <span
+                                        class="timeline-year"> <i class="uil uil-calendar-alt"></i> 2023 </span> <button
+                                        class="button button--flex button--small timeline-more services__button"> View
+                                        More <i class="uil uil-arrow-right button__icon"></i> </button>
+                                    <div class="services__modal">
+                                        <div class="services__modal-content">
+                                            <h4 class="services__modal-title">Class 12th Summary:</h4> <i
+                                                class="uil uil-times services__modal-close"></i>
+                                            <ul class="services__modal-services grid">
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Subjects studied: Physics, Chemistry, Maths, English, Computer
+                                                        Applications, and Ph.E.</p>
+                                                </li>
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Scored 93.8%</p>
+                                                </li>
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Ranked Top 10 students and cracked JEE Advanced.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Timeline Item 3: B.Tech. -->
+                            <div class="timeline-item">
+                                <div class="timeline-icon"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-degree">B.Tech.</h3>
+                                    <p class="timeline-institution">Rajiv Gandhi Institute of Petroleum Technology, Jais
+                                    </p> <span class="timeline-year"> <i class="uil uil-calendar-alt"></i> 2023 - 2027
+                                    </span> <button
+                                        class="button button--flex button--small timeline-more services__button"> View
+                                        More <i class="uil uil-arrow-right button__icon"></i> </button>
+                                    <div class="services__modal">
+                                        <div class="services__modal-content">
+                                            <h4 class="services__modal-title">College Summary:</h4> <i
+                                                class="uil uil-times services__modal-close"></i>
+                                            <ul class="services__modal-services grid">
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Pursuing B.Tech. in CSE; learning DSA, Web Technologies, and
+                                                        upskilling in AI.</p>
+                                                </li>
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Scored an aggregate of 8.56 CGPA till now.</p>
+                                                </li>
+                                                <li class="services__modal-service"> <i
+                                                        class="uil uil-check-circle services__modal-icon"></i>
+                                                    <p>Student coordinator in the media and publication club.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="skills__content" id="skills">
+                    <h2 class="section__title">Skills</h2>
+                    <h3 class="skills__title">Technical Skills</h3>
+                    <div class="skills__list">
+                        <div class="skills__data">
+                            <span>Python</span>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__python"></div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <span>C++</span>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__cpp"></div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <span>Django</span>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__django" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <span>JavaScript</span>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__javascript" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <span>Machine Learning</span>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__ml" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <!-- <span class="section__subtitle">Some of my recent work</span> -->
+            <div class="container projects__container">
+                <div class="project__content">
+                    <img src="Assets/Images/Travel.png" alt="Travel Itinerary Planner screenshot" class="project__img">
+                    <div class="project__info">
+                        <h3 class="project__title">Travel Itinerary Planner</h3>
+                        <p class="project__description">
+                            A full-stack AI-powered travel planner using LLaMA 3.1 and LangChain, built with
+                            Streamlit.
+                        </p>
+                        <a href="https://github.com/Adityarya11/Travel-Itinerary-Planner" class="button project__button"
+                            target="_blank">
+                            View Project <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <img src="Assets/Images/RAG.png" alt="RAG Model screenshot" class="project__img">
+                    <div class="project__info">
+                        <h3 class="project__title">RAG Model for QA Bot</h3>
+                        <p class="project__description">
+                            A Retrieval-Augmented Generation (RAG) chatbot using LangChain, Pinecone, and
+                            LLaMA 3.1.
+                        </p>
+                        <a href="https://github.com/Adityarya11/RAG_model" class="button project__button"
+                            target="_blank">
+                            View Project <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <img src="Assets/Images/SIH.png" alt="Electricity Load Curve Prediction screenshot"
+                        class="project__img">
+                    <div class="project__info">
+                        <h3 class="project__title">Electricity Load Curve Prediction</h3>
+                        <p class="project__description">
+                            An LSTM-based model for predicting electricity demand, with a Django backend.
+                        </p>
+                        <a href="https://github.com/Adityarya11/SIH" class="button project__button" target="_blank">
+                            View Project <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section (placeholder - to be implemented) -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+            <div class="contact__container container">
+                <form id="contact-form" class="contact__form">
+                    <div class="contact__content">
+                        <label for="name" class="contact__label">Name</label>
+                        <input type="text" id="name" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label for="email" class="contact__label">Email</label>
+                        <input type="email" id="email" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea id="message" rows="7" class="contact__input"></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="button button--flex">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="quote section" id="quote">
+            <h2 class="section__title">Random Quote Generator</h2>
+            <div class="quote__container container">
+                <p class="quote__text" id="quote-text">"Click the button to generate a quote"</p> <button class="button"
+                    id="new-quote-btn">New Quote</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container">
+                <div>
+                    <h1 class="footer__title">Aditya Arya</h1>
+                    <span class="footer__subtitle">CSE Student at RGIPT</span>
+                </div>
+                <ul class="footer__links">
+                    <li><a href="#about" class="footer__link">About</a></li>
+                    <li><a href="#projects" class="footer__link">Projects</a></li>
+                    <li><a href="#contact" class="footer__link">Contact</a></li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://github.com/Adityarya11" target="_blank" class="footer__social" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aditya-arya-714403281/" target="_blank" class="footer__social"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Aditya Arya. All rights reserved. 2025</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <script src="Js/script.js"></script>
+</body>
+
+</html>
